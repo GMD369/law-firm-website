@@ -20,7 +20,7 @@ export default function Icon() {
           fontFamily: "Georgia, serif",
         }}
       >
-        HC
+        MC
       </div>
     ),
     { ...size }

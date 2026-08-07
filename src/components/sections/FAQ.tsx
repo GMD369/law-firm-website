@@ -3,17 +3,17 @@ import { FaqItem } from "@/types";
 const faqs: FaqItem[] = [
   {
     question: "How much does a consultation cost?",
-    answer: "Nothing. Your first consultation is free and confidential.",
+    answer: "Nothing. Your first consultation is free and confidential — in person or over WhatsApp.",
   },
   {
-    question: "How long do I have to file a claim?",
+    question: "How long does a khula or property case take?",
     answer:
-      "Deadlines vary by case type and state law. Contact us early so we can protect your rights.",
+      "It varies by court and case type, but most straightforward khula matters conclude within a few months, while property suits can take longer. We'll give you a realistic timeline at your first consultation.",
   },
   {
-    question: "Do I pay anything if we don't win?",
+    question: "Can I consult you without visiting Lahore in person?",
     answer:
-      "For personal injury cases, we work on contingency — no fee unless we recover for you.",
+      "Yes. Many clients start with a WhatsApp or phone consultation, and we handle documentation and updates digitally wherever possible.",
   },
 ];
 

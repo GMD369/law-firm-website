@@ -19,7 +19,7 @@
   --spacing-section: 6rem;
   --spacing-section-lg: 8rem;
 
-  --radius-card: 0.5rem;
+  --radius-card: 1rem;
   --radius-btn: 0.25rem;
 }
 
@@ -53,4 +53,45 @@ body {
   background: var(--color-surface);
   color: var(--color-text);
   font-family: var(--font-body);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-130%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(230%) skewX(-12deg);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: translateX(-130%) skewX(-12deg);
+}
+
+.btn-shine:hover::after {
+  animation: shimmer-sweep 0.9s ease-out;
 }

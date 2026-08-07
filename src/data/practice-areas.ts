@@ -10,35 +10,35 @@ export type PracticeArea = {
 
 export const practiceAreas: PracticeArea[] = [
   {
-    slug: "personal-injury",
-    title: "Personal Injury",
-    summary: "Free consultation. No fees unless we win.",
-    description:
-      "We fight for full compensation after accidents, negligence, and injury caused by others. Our team has recovered over $42M for injured clients across Riverside County.",
-    image: images.handshake,
-  },
-  {
     slug: "family-law",
     title: "Family Law",
-    summary: "Compassionate guidance through your family's hardest chapter.",
+    summary: "Khula, nikah nama disputes, and child custody handled with discretion.",
     description:
-      "Divorce, custody, and support handled with clarity, discretion, and a steady hand. We help families move forward with a plan they can live with.",
+      "From khula and mubarat to maintenance and custody matters before the Family Court, we guide clients through Pakistan's family law system with compassion and a clear plan, protecting both dignity and legal rights.",
     image: images.meetingRoom,
+  },
+  {
+    slug: "property-law",
+    title: "Property & Land Disputes",
+    summary: "Registry verification, possession disputes, and inheritance cases.",
+    description:
+      "We handle fard-e-malkiat verification, illegal possession (qabza) cases, registry fraud, and inheritance (wirasat) disputes across Lahore and Punjab, so your property stays legally protected.",
+    image: images.officeDesk,
   },
   {
     slug: "criminal-defense",
     title: "Criminal Defense",
-    summary: "A fighter in your corner when everything is on the line.",
+    summary: "FIR quashing, bail matters, and defense before Sessions Court.",
     description:
-      "Aggressive, experienced defense from arrest through trial and appeal. We've defended clients in over 300 criminal matters across Southern California.",
+      "Aggressive representation from FIR registration through bail, trial, and appeal — including cyber crime cases before the FIA — for clients across Lahore and surrounding districts.",
     image: images.gavelCloseup,
   },
   {
-    slug: "estate-planning",
-    title: "Estate Planning",
-    summary: "Protect what you've built for the people you love.",
+    slug: "corporate-law",
+    title: "Corporate & Business Law",
+    summary: "SECP company registration, contracts, and commercial disputes.",
     description:
-      "Wills, trusts, and succession planning tailored to your family and assets, so your wishes are honored without unnecessary cost or delay.",
+      "SECP incorporation, partnership deeds, commercial contract drafting, and recovery suits for businesses and startups operating in Pakistan.",
     image: images.bookshelf,
   },
 ];

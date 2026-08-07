@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 type ButtonProps = {
   href: string;
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "ghost";
 } & ComponentPropsWithoutRef<typeof Link>;
 
 export default function Button({
@@ -14,11 +14,14 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-accent uppercase tracking-wide px-8 py-3 rounded-btn transition text-sm";
+    "relative overflow-hidden inline-flex items-center justify-center font-accent uppercase tracking-wide px-8 py-3 rounded-btn transition-all duration-300 text-sm hover:-translate-y-0.5";
   const variants = {
-    primary: "bg-accent hover:bg-accent-hover text-white",
+    primary:
+      "bg-accent hover:bg-accent-hover text-white shadow-md hover:shadow-lg hover:shadow-accent/30 btn-shine",
     outline:
-      "border border-primary text-primary hover:bg-primary hover:text-white",
+      "border border-primary text-primary hover:bg-primary hover:text-white btn-shine",
+    ghost:
+      "border border-white/40 text-white hover:bg-white/10 btn-shine",
   };
 
   return (
@@ -27,7 +30,7 @@ export default function Button({
       className={`${base} ${variants[variant]} ${className}`}
       {...props}
     >
-      {children}
+      <span className="relative z-10">{children}</span>
     </Link>
   );
 }

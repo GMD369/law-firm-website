@@ -21,6 +21,16 @@ export default function Footer() {
             </a>
           </p>
           <p>
+            <a
+              href={site.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent"
+            >
+              WhatsApp: {site.whatsapp}
+            </a>
+          </p>
+          <p>
             <a href={`mailto:${site.email}`} className="hover:text-accent">
               {site.email}
             </a>
@@ -29,9 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-white/70">
-          <p>
-            Licensed and in good standing with the State Bar.
-          </p>
+          <p>Enrolled with the Punjab Bar Council &amp; Lahore High Court Bar Association.</p>
           <p className="mt-4">
             &copy; {new Date().getFullYear()} {site.firmName}. All rights
             reserved.

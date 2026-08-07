@@ -1,20 +1,21 @@
 import { CaseResult } from "@/types";
+import Reveal from "@/components/ui/Reveal";
 
 const cases: CaseResult[] = [
   {
-    title: "Auto Accident Settlement — Riverside, CA",
-    amount: "$1.2M",
-    summary: "Secured full policy limits for a client with lasting injuries.",
+    title: "Property Possession Recovery — Gulberg, Lahore",
+    amount: "Rs. 8.5 Cr",
+    summary: "Recovered illegally occupied commercial property after a 2-year suit.",
   },
   {
-    title: "Workplace Injury Verdict — San Bernardino, CA",
-    amount: "$850K",
-    summary: "Jury verdict after the insurer refused a fair pre-trial offer.",
+    title: "Family Maintenance Settlement — Model Town, Lahore",
+    amount: "Rs. 12 Lac",
+    summary: "Secured fair monthly maintenance and full custody rights for our client.",
   },
   {
-    title: "Wrongful Termination — Corona, CA",
-    amount: "$400K",
-    summary: "Settlement reached after documenting a pattern of retaliation.",
+    title: "Commercial Recovery Suit — DHA, Lahore",
+    amount: "Rs. 4.2 Cr",
+    summary: "Settlement reached after opposing party defaulted on a supply contract.",
   },
 ];
 
@@ -22,22 +23,26 @@ export default function CaseResults() {
   return (
     <section className="py-section md:py-section-lg bg-surface-secondary">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="font-heading text-3xl md:text-4xl text-primary text-center">
-          Recent Case Results
-        </h2>
+        <Reveal>
+          <h2 className="font-heading text-3xl md:text-4xl text-primary text-center">
+            Recent Case Results
+          </h2>
+        </Reveal>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {cases.map((c) => (
-            <div key={c.title} className="bg-surface rounded-card p-8">
-              <p className="font-accent text-3xl font-bold text-accent">
-                {c.amount}
-              </p>
-              <h3 className="mt-2 font-heading text-lg text-primary">
-                {c.title}
-              </h3>
-              <p className="mt-2 font-body text-sm text-text-muted">
-                {c.summary}
-              </p>
-            </div>
+          {cases.map((c, i) => (
+            <Reveal key={c.title} delay={i * 100}>
+              <div className="h-full bg-surface rounded-card p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-2 border-accent">
+                <p className="font-accent text-3xl font-bold text-accent">
+                  {c.amount}
+                </p>
+                <h3 className="mt-2 font-heading text-lg text-primary">
+                  {c.title}
+                </h3>
+                <p className="mt-2 font-body text-sm text-text-muted">
+                  {c.summary}
+                </p>
+              </div>
+            </Reveal>
           ))}
         </div>
         <p className="mt-8 text-center font-body text-xs text-text-muted">

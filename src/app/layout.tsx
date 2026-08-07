@@ -22,11 +22,11 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Harrington & Cole Law Group | Trusted Attorneys in Riverside",
-    template: "%s | Harrington & Cole Law Group",
+    default: "Malik & Chaudhry Law Associates | Advocates in Lahore",
+    template: "%s | Malik & Chaudhry Law Associates",
   },
   description:
-    "Free consultation. Trusted legal representation in Riverside, CA. Talk to an attorney today.",
+    "Free consultation. Trusted advocates for family, property, and corporate law in Lahore, Pakistan. Talk to a lawyer today.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
