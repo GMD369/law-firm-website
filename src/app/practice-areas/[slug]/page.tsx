@@ -39,7 +39,7 @@ export default async function PracticeAreaPage({
           src={area.image}
           alt={area.title}
           fill
-          priority
+          preload
           sizes="100vw"
           className="object-cover"
         />

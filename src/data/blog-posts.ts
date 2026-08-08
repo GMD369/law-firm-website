@@ -7,7 +7,7 @@ export const blogPosts: (BlogPost & { body: string; image: string })[] = [
     title: "How to File for Khula in Pakistan: A Step-by-Step Guide",
     excerpt: "What the Family Court process actually looks like, from petition to decree.",
     date: "2026-07-01",
-    image: images.officeDesk,
+    image: images.clientConsultation,
     body: "Filing for khula begins with a petition before the Family Court under the Family Courts Act, 1964. After the first hearing, the court typically refers the matter for reconciliation before proceeding to evidence and a final decree — most straightforward cases conclude within a few months. Speaking with an advocate before filing helps protect maintenance and custody rights from the outset.",
   },
   {
@@ -15,7 +15,7 @@ export const blogPosts: (BlogPost & { body: string; image: string })[] = [
     title: "5 Documents to Verify Before Buying Property in Pakistan",
     excerpt: "Protect yourself from registry fraud and disputed possession claims.",
     date: "2026-06-15",
-    image: images.lawBooksGavel,
+    image: images.signingDocument,
     body: "Before any advance payment, verify the fard-e-malkiat, non-encumbrance certificate, latest tax receipts, approved site plan, and a fresh mutation record from the relevant Land Revenue office. A short legal due-diligence review before registry can save years of litigation later.",
   },
   {
@@ -23,7 +23,7 @@ export const blogPosts: (BlogPost & { body: string; image: string })[] = [
     title: "An FIR Has Been Registered Against You — What Now?",
     excerpt: "The first 48 hours matter most for bail and defense strategy.",
     date: "2026-05-22",
-    image: images.courthouseColumns,
+    image: images.gavelOnMarble,
     body: "Once an FIR is registered, do not record a statement without counsel present. Depending on the offense, pre-arrest or post-arrest bail may be available before the Sessions Court or High Court. Early legal advice materially changes the outcome of a criminal matter in Pakistan's courts.",
   },
 ];
